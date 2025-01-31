@@ -1,0 +1,14 @@
+.containercard {
+  width: 1400px;
+  max-width: calc(100% - 30px);
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+  gap: 5px; /* Espacio entre los elementos (equivalente a grid-gap) */
+  padding-bottom: 10px;
+}
+
+.containercard > * {
+  flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+  /* Esto permite que los elementos crezcan y se reduzcan, con un ancho base de 200px */
+}

@@ -1,0 +1,89 @@
+.cardpokemon {
+  border: 2px solid #e2e8f0; // Borde gris claro
+  border-radius: 8px; // Esquinas redondeadas
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Sombra pequeña
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; // Transición suave
+
+  &:hover {
+    transform: translateY(-4px); // Efecto de levantar la tarjeta
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); // Sombra más pronunciada al hover
+  }
+
+}
+
+.datepokemon {
+  // Estilos para la sección superior (ID y Favorite)
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.idpokemon {
+  // Estilos para el ID del Pokémon
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.favorite {
+  cursor: pointer; // Cambia el cursor a pointer
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .favoriteIcon {
+    color: #ccc; // Color gris para el corazón no seleccionado
+    font-size: 1.5rem;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .favoriteIconActive {
+    color: #ff4d4d; // Color rojo para el corazón seleccionado
+    font-size: 1.5rem;
+    transition: color 0.2s ease-in-out;
+  }
+}
+.imgpokemon {
+  // Estilos para la imagen y el nombre del Pokémon
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
+.typepokemon{
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+
+
+  .typecolor{
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 4px;
+    border-radius: 4px;
+
+    color: white;
+    text-transform: capitalize;
+  }
+}
+// .infopokemon {
+//   // Estilos para la información del tipo
+//   padding: 1rem;
+//   font-size: 0.875rem;
+
+//   strong {
+//     font-weight: bold;
+//   }
+// }
